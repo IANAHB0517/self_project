@@ -2,7 +2,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/css/styles.css" />
+    <script src="modules/values.js"></script>    
     <title>HIPHUB_VER.2</title>
   </head>
-  <body></body>
+  <body>
+    <div class="mainpage_container">
+      <header class="header hidden">
+        <div class="header_menu">
+          <div class="newest upper"><script>menu_li('newest');</script></div>
+          <div class="chart upper"><script>menu_li('chart');</script></div>
+          <div class="archive upper"><script>menu_li('archive');</script></div>
+          <div class="search"><input type="text" placeholder="Find your Rising Musician"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="user upper"><a href="#"><FontAwesomeIcon icon="fa-solid fa-user"/></a></div>
+          <div class="setting"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
+        </div>
+      </header>
+      <nav class="nav">
+        <ul class="nav_menu">
+          <li class="logo upper">               <a href="#"><img src="" alt="hiphublogo"></a></li>
+          <li class="login upper">              <a href="#"><FontAwesomeIcon icon="fa-solid fa-user"/>로그인</a></li>
+          <li class="newest upper">             <script>menu_li('newest');</script></li>
+          <li class="chart upper">              <script>menu_li('chart');</script></li>
+          <li class="rising upper">             <script>menu_li('rising');</script></li>
+          <li class="radio_station upper">      <script>menu_li('radio station');</script></li>
+          <li class="hardboiled_stage upper">   <script>menu_li('hardboiled stage');</script></li>
+          <li class="instrumental upper">       <script>menu_li('instrumental');</script></li>
+          <li class="rising_musicain upper">    <script>menu_li('rising musician');</script></li>
+          <li class="out_of_screen upper">      <script>menu_li('#out_of_screen');</script></li>
+          <li class="next_stage upper">         <script>menu_li('next stage');</script></li>
+          <li class="open_mic upper">           <script>menu_li('open mic');</script></li>
+          <li class="servece_introduce upper">  <script>menu_li('서비스 소개');</script></li>
+          <li class="membership upper">         <script>menu_li('멤버십');</script></li>
+        </ul>
+      </nav>
+      <article class="article">
+
+      </article>
+      <div class="player">
+
+      </div>
+      <ad class="ad">
+
+      </ad>
+      <footer class="footer">
+
+      </footer>
+    </div>
+    
+  </body>
+  <script src="https://kit.fontawesome.com/7418948509.js" crossorigin="anonymous"></script>
 </html>
