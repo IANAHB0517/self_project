@@ -1,8 +1,8 @@
-var section_name = 'section_name';
+var part_name = 'part_name';
 
 
-function section(section_name){
-    if (section_name === 'nav'){
+function part(part_name){
+    if (part_name === 'nav'){
             document.write(
                 `<ul class="nav_menu upper">
                     <li class="logo">               <a href="#"><img src="" alt="hiphublogo"></a></li>
@@ -39,12 +39,12 @@ function section(section_name){
                                                                         //         <li class="membership">         <script>menu_li('멤버십');</script></li>
                                                                         //     </ul>`
                                                                         // );
-    } else if (section_name === 'article'){
+    } else if (part_name === 'article'){
         document.write(
             `
             `
         );
-    } else if (section_name === 'footer'){
+    } else if (part_name === 'footer'){
         document.write(
             `sdsdsd`
         );
