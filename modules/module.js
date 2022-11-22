@@ -1,4 +1,4 @@
-var part_name = 'part_name';
+var part_name = "part_name";
 
 
 function part(part_name){

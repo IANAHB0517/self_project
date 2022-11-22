@@ -1,5 +1,49 @@
 @import "reset";
+@import "mixins";
+
 
 .hidden{
   display:none;
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
+.mainpage_container{
+  display:grid;
+  // height:150vh;
+  grid-template-columns: minmax(20vw,30vw) 1fr;
+  grid-template-rows: minmax(10vh,15vh) repeat(4,minmax(25vh,30vh));
+  .nav{
+    grid-column: 1/2;
+    grid-row:2/-1;
+    position:fixed;
+  }
+  .article{
+    grid-column: 2/3;
+    grid-row:2/-1;
+    .table{
+      background-color: aqua;
+      @include flexcol();
+      .table_headbar{
+      
+        @include flexrow();
+        .table_leftheadbar{
+          .playlist{
+
+          }
+        }
+        .table_rightheadbar{
+          @include flexrow();
+          .arrows{
+          @include flexrow();
+        }
+      }
+      }
+      .album{
+        @include flexcol();
+      }
+    }
+  }
 }
