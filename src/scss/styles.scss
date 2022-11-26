@@ -27,14 +27,13 @@
       background-color: aqua;
       @include flexcol();
       .table_headbar{
-      
+      justify-content: space-between;
         @include flexrow();
-        .table_leftheadbar{
-          .playlist{
-
-          }
+        .table_lheadbar{
+          // .playlist{
+          // }
         }
-        .table_rightheadbar{
+        .table_rheadbar{
           @include flexrow();
           .arrows{
           @include flexrow();
