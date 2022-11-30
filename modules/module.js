@@ -76,30 +76,35 @@
 
     let objArray = [newest, logo, login, chart, rising, radioStation, hardboiledStage, instrumental, risingMusicain, outOfScreen, nextStage, openMic, serveceIntroduce, membership];
 
-    for(let key in obj){
-        objname = `${obj[key]}`;
-        objclass = `${obj[key]}`;
-        objlink = `${obj[key]}`;
-    }
+    // for(let key in obj){
+    //     objname = `${obj[key]}`;
+    //     objclass = `${obj[key]}`;
+    //     objlink = `${obj[key]}`;
+    // }
 
     // FUNCTION
 
+    // classWrite = objArray[i].class;
+    // linkWrite = objArray[i].link;
+    // nameWrite = objArray[i].name;
+
     function listWrite(){
         for(let i =0; i < objArray.length; i++){
-            document.getElementsByClassName(part_name).innerHTML =
-            <li class="objArray[i].class">
-                <a href="objArray[i].link">
-                    objArray[i].name
+            document.write =
+            `<li class="` + objArray[i].class + `">
+                <a href="` + objArray[i].link + `">
+                    ` + objArray[i].name + `
                 </a>
-            </li>;}
+            </li>`;
+        }
     }
 
     function part(part_name){
         if (part_name === 'nav'){
 
             
-                // document.getElementsByClassName("nav").innerHtml
-                    document.write(`<ul class="nav_menu upper">` + listWrite() + `</ul>`);
+                document.getElementsByClassName("nav").innerHtml = `<ul class="nav_menu upper">` + listWrite(); +`</ul>`
+                    // document.write(`<ul class="nav_menu upper">` + listWrite() + `</ul>`);
 
             // document.write(
             //     `<ul class="nav_menu upper">
