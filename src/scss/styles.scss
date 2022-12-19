@@ -1,46 +1,45 @@
 @import "reset";
 @import "mixins";
 
-
-.hidden{
-  display:none;
+.hidden {
+  display: none;
 }
 
-.upper{
+.upper {
   text-transform: uppercase;
 }
 
-.mainpage_container{
-  display:grid;
+.mainpage_container {
+  display: grid;
   // height:150vh;
-  grid-template-columns: minmax(20vw,30vw) 1fr;
-  grid-template-rows: minmax(10vh,15vh) repeat(4,minmax(25vh,30vh));
-  .nav{
+  grid-template-columns: minmax(20vw, 30vw) 1fr;
+  grid-template-rows: minmax(10vh, 15vh) repeat(4, minmax(25vh, 30vh));
+  .nav {
     grid-column: 1/2;
-    grid-row:2/-1;
-    position:fixed;
+    grid-row: 2/-1;
+    position: fixed;
   }
-  .article{
+  .article {
     grid-column: 2/3;
-    grid-row:2/-1;
-    .table{
+    grid-row: 2/-1;
+    .table {
       background-color: aqua;
       @include flexcol();
-      .table_headbar{
-      justify-content: space-between;
+      .table_headbar {
+        justify-content: space-between;
         @include flexrow();
-        .table_lheadbar{
-          // .playlist{
-          // }
-        }
-        .table_rheadbar{
+        // .table_lheadbar{
+        //   // .playlist{
+        //   // }
+        // }
+        .table_rheadbar {
           @include flexrow();
-          .arrows{
-          @include flexrow();
+          .arrows {
+            @include flexrow();
+          }
         }
       }
-      }
-      .album{
+      .album {
         @include flexcol();
       }
     }

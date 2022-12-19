@@ -1,66 +1,83 @@
-<head>
+<html>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/styles.css" />
-    <script src="modules/values.js"></script>
+    <!-- <link rel="reset" href="../self-project/dist/css/reset.css" /> -->
+    <script src="modules/fuction.js"></script>
     <script src="modules/module.js"></script>
-    
-    
+
     <title>HIPHUB_VER.2</title>
   </head>
   <body>
     <div class="mainpage_container">
       <header class="header hidden">
         <div class="header_menu">
-          <div class="newest upper"><script>menu_li('newest');</script></div>
-          <div class="chart upper"><script>menu_li('chart');</script></div>
-          <div class="archive upper"><script>menu_li('archive');</script></div>
-          <div class="search"><input type="text" placeholder="Find your Rising Musician"><i class="fa-solid fa-magnifying-glass"></i></div>
-          <div class="user upper"><a href="#"><FontAwesomeIcon icon="fa-solid fa-user"/></a></div>
-          <div class="setting"><a href="#"><i class="fa-solid fa-gear"></i></a></div>
+          <div class="newest upper"></div>
+          <div class="chart upper"></div>
+          <div class="archive upper"></div>
+          <div class="search">
+            <input type="text" placeholder="Find your Rising Musician" /><i
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+          <div class="user upper">
+            <a href="#"><FontAwesomeIcon icon="fa-solid fa-user" /></a>
+          </div>
+          <div class="setting">
+            <a href="#"><i class="fa-solid fa-gear"></i></a>
+          </div>
         </div>
       </header>
       <nav class="nav">
-        <script>part('nav');</script>
+        <script>
+          part("nav");
+        </script>
       </nav>
       <article class="article">
         <!-- <script>part('article');</script> -->
         <section class="table">
           <div class="table_headbar">
             <div class="table_lheadbar">
-              <h3 class="playlist upper"><a href="playlist.html">play list</a></h3>
+              <h3 class="playlist upper">
+                <a href="playlist.html">play list</a>
+              </h3>
             </div>
             <div class="table_rheadbar">
-              <div class="playlist_more"><a href="playlist_more.html">더보기</a></div>
+              <div class="playlist_more">
+                <a href="playlist_more.html">더보기</a>
+              </div>
               <div class="arrows">
                 <div class="left"><i class="fa-solid fa-chevron-left"></i></div>
-                <div class="right"><i class="fa-solid fa-chevron-right"></i></i></div>
+                <div class="right">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
               </div>
             </div>
           </div>
           <div class="album">
             <div class="topline">
-              <div class="artwork"><a href="track.html"><img src="" alt=""></a></div>
+              <div class="artwork">
+                <a href="track.html"><img src="" alt="" /></a>
+              </div>
               <div class="title upper"><a href="track.html">title</a></div>
             </div>
             <div class="bottomline">
-              <div class="category upper"><a href="category.html">category</a></div>
+              <div class="category upper">
+                <a href="category.html">category</a>
+              </div>
               <div class="artist"><a href="artist.html">artist</a></div>
             </div>
           </div>
         </section>
       </article>
-      <div class="player">
-      </div>
-      <ad class="ad">
-
-      </ad>
-      <footer class="footer">
-        
-      </footer>
+      <div class="player"></div>
+      <ad class="ad"> </ad>
+      <footer class="footer"></footer>
     </div>
-    
-    
   </body>
-  <script src="https://kit.fontawesome.com/7418948509.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/7418948509.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="dist/css/styles.css" />
 </html>
